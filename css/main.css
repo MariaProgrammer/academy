@@ -2794,7 +2794,8 @@ body.no-scroll {
 .form-column {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 50px;
+  margin-bottom: 70px;
 }
 
 /* --- Поля формы --- */
@@ -2819,7 +2820,7 @@ body.no-scroll {
   /* font-size: 16px; */
   background-color: #fff;
   transition: border-color 0.3s, box-shadow 0.3s;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .form-field input:focus,
 .form-field textarea:focus,
@@ -3021,6 +3022,7 @@ body.no-scroll {
   grid-auto-rows: 1fr;
   grid-gap: 12px;
   align-items: stretch;
+  margin-bottom: 70px;
 }
 .form-field__wrapper > .form-field {
   display: flex; /* Превращаем ячейку во flex-контейнер */
@@ -3083,9 +3085,10 @@ textarea#requirements {
   margin-top: 32px;
   display: flex;
   gap: 10px;
+  /* justify-content: flex-end; */
 }
 .btn {
-  width: 100%;
+  flex: 1; 
   padding: 14px;
   font-size: 16px;
   font-weight: 600;
@@ -3115,6 +3118,7 @@ textarea#requirements {
 .promo-link {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 63px;
 }
 .form-step[data-step="1"] ~ .form-disclaimer {
   color: transparent;
@@ -3140,13 +3144,10 @@ textarea#requirements {
     flex: 1;
   }
   .form-navigation {
-    justify-content: flex-end;
+   display: flex;
+   gap: 10px;
   }
-  .btn {
-    display: block;
-    width: 100%;
-    min-width: 120px;
-  }
+  
 }
 
 /* ==========================================================================
